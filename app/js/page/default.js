@@ -2,24 +2,12 @@ define(function (require) {
 
   'use strict';
 
-  /**
-   * Module dependencies
-   */
-
-  // var MyComponent = require('component/my_component');
-
-  /**
-   * Module exports
-   */
+   var HelloWorld = require('component/hello_world');
 
   return initialize;
 
-  /**
-   * Module function
-   */
-
   function initialize() {
-    // MyComponent.attachTo(document);
+    HelloWorld.attachTo(".Example[data-example-name='hello_world']");
   }
 
 });
