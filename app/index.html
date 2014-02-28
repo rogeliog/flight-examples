@@ -8,12 +8,21 @@
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="/bower_components/components-bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="/bower_components/components-bootstrap/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="/css/highlight_github.css">
     <link rel="stylesheet" href="/css/main.css">
   </head>
   <body>
 
     <div class="Example" data-name="hello_world">
-      <div class="Example-code"></div>
+      <div class="Example-code">
+        <pre>
+        <code>
+          this.highlightCode = function () {
+            alert(1);
+          }
+        </code>
+        </pre>
+      </div>
       <div class="Example-result">
         <input type="text" class="inputField" placeholder="Enter name here">
         <h2>Hello <span class="name"> </span>!</h2>

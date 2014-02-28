@@ -1,1 +1,15 @@
+.Example {
+  width: 800px;
+}
 
+.Example-code {
+  padding: 20px;
+  width: 70%;
+  float: left
+}
+
+.Example-result {
+  padding: 20px;
+  width: 30%;
+  float: right;
+}
