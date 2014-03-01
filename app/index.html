@@ -17,9 +17,30 @@
     <div class="Example" data-example-name="hello_world">
       <div class="Example-code-wrapper">
         <textarea class="Example-code">
-          this.highlightCode = function () {
-            alert(1);
-          }
+define(function (require) {
+
+  'use strict';
+
+  var defineComponent = require('flight/lib/component');
+
+  return defineComponent(helloWorld);
+
+  function helloWorld() {
+    this.defaultAttrs({
+      inputSelector: '.inputField',
+      nameSelector: '.name'
+    });
+
+    this.updateName = function (e, data) {
+      this.select('nameSelector').text(data.el.value);
+    }
+
+    this.after('initialize', function () {
+      this.on("keyup", { inputSelector: this.updateName });
+    });
+  }
+
+});
         </textarea>
       </div>
       <div class="Example-result">
