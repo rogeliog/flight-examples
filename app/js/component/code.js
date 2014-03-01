@@ -3,22 +3,22 @@ define(function (require) {
   'use strict';
 
   var defineComponent = require('flight/lib/component');
-  var withHighlight = require('component/with_highlight');
+  var withCodeMirror = require('component/with_code_mirror');
 
-  return defineComponent(code, withHighlight);
+  return defineComponent(code, withCodeMirror);
 
   function code() {
     this.defaultAttrs({
-      codeSelector: 'code',
+      codeTextArea: '.Example-code',
       lang: 'javascript'
     });
 
-    this.highlightCode = function () {
-      this.highlightBlock(this.select('codeSelector')[0]);
-    };
+    this.codeMirror = function () {
+      this.codeMirrorToTextArea(this.select('codeTextArea')[0]);
+    }
 
     this.after('initialize', function () {
-      this.highlightCode();
+      this.codeMirror();
     });
   }
 

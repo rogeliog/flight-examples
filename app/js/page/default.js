@@ -9,7 +9,7 @@ define(function (require) {
 
   function initialize() {
     HelloWorld.attachTo(".Example[data-example-name='hello_world']");
-    Code.attachTo(".Example-code");
+    Code.attachTo(".Example-code-wrapper");
   }
 
 });
