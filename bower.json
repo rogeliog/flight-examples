@@ -5,7 +5,8 @@
     "jquery": "2.x.x",
     "flight": "~1.1.0",
     "requirejs": "~2.1.5",
-    "components-bootstrap": "3.x.x"
+    "components-bootstrap": "3.x.x",
+    "codemirror": "~3.22.0"
   },
   "devDependencies": {
     "jasmine-flight": "~2.2.0"
