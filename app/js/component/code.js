@@ -10,15 +10,19 @@ define(function (require) {
   function code() {
     this.defaultAttrs({
       codeTextArea: '.Example-code',
+      runSelector: '.Example-runner',
       lang: 'javascript'
     });
 
     this.codeMirror = function () {
       this.codeMirrorToTextArea(this.select('codeTextArea')[0]);
-    }
+    };
 
     this.after('initialize', function () {
       this.codeMirror();
+      this.on('click', {
+        runSelector: this.runCode
+      });
     });
   }
 
