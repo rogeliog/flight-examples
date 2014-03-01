@@ -10,7 +10,6 @@ define(function (require) {
   function code() {
     this.defaultAttrs({
       codeTextArea: '.Example-code',
-      runSelector: '.Example-runner',
       lang: 'javascript'
     });
 
@@ -20,9 +19,6 @@ define(function (require) {
 
     this.after('initialize', function () {
       this.codeMirror();
-      this.on('click', {
-        runSelector: this.runCode
-      });
     });
   }
 
