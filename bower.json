@@ -6,7 +6,8 @@
     "flight": "~1.1.0",
     "requirejs": "~2.1.5",
     "components-bootstrap": "3.x.x",
-    "codemirror": "~3.22.0"
+    "codemirror": "~3.22.0",
+    "flight-hogan": "~2.0.1"
   },
   "devDependencies": {
     "jasmine-flight": "~2.2.0"

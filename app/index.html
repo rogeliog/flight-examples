@@ -14,63 +14,7 @@
   </head>
   <body>
 
-    <div class="Example" data-example-name="hello_world">
-      <div class="Example-code-wrapper">
-        <textarea class="Example-code">
-define(function (require) {
-
-  'use strict';
-
-  var defineComponent = require('flight/lib/component');
-
-  return defineComponent(helloWorld);
-
-  function helloWorld() {
-    this.defaultAttrs({
-      inputSelector: '.inputField',
-      nameSelector: '.name'
-    });
-
-    this.updateName = function (e, data) {
-      this.select('nameSelector').text(data.el.value);
-    }
-
-    this.after('initialize', function () {
-      this.on("keyup", { inputSelector: this.updateName });
-    });
-  }
-
-});
-        </textarea>
-      </div>
-      <div class="Example-result">
-        <input type="text" class="inputField" placeholder="Enter name here">
-        <h3>Hello <span class="name"> </span>!</h3>
-      </div>
-    </div>
-
-    <div class="Example" data-example-name="hello_world">
-      <div class="Example-code-wrapper">
-        <textarea class="Example-code">
-        </textarea>
-      </div>
-
-      <div class="Example-result">
-        <h3>Select color!</h3>
-
-        <select class="Example-color-picker">
-          <option>Blue</option>
-          <option>Green</option>
-          <option>Red</option>
-        </select>
-
-        <div class='clearfix'>
-          <div class="Example-color-box Example-color-box--blue" data-color="blue">0</div>
-          <div class="Example-color-box Example-color-box--red" data-color="red">0</div>
-          <div class="Example-color-box Example-color-box--green" data-color="green">0</div>
-        </div>
-
-      </div>
+    <div class="Example" data-example-name="hello_world"></div>
 
     <!--[if lt IE 9]>
     <script src="/bower_components/es5-shim/es5-shim.js"></script>

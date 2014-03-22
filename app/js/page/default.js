@@ -8,10 +8,10 @@ define(function (require) {
   return initialize;
 
   function initialize() {
-    Code.attachTo(".Example");
-
     //Examples
     HelloWorldBoot();
+
+    Code.attachTo(".Example");
   }
 
 });

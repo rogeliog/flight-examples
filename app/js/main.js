@@ -5,7 +5,8 @@ requirejs.config({
   paths: {
     'component': '../js/component',
     'examples': '../examples',
-    'page': '../js/page'
+    'page': '../js/page',
+    'hoganjs': 'hogan/web/builds/2.0.0/hogan-2.0.0.amd'
   }
 });
 
