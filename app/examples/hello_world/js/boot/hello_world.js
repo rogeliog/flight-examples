@@ -1,7 +1,7 @@
 define(function (require) {
   'use strict';
 
-   var HelloWorld = require('examples/hello_world/ui/hello_world');
+   var HelloWorld = require('examples/hello_world/js/ui/hello_world');
 
   return helloWorldBoot;
 
