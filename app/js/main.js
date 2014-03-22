@@ -4,6 +4,7 @@ requirejs.config({
   baseUrl: 'bower_components',
   paths: {
     'component': '../js/component',
+    'examples': '../examples',
     'page': '../js/page'
   }
 });

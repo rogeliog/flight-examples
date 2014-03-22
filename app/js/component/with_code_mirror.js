@@ -5,7 +5,7 @@ define(function (require) {
 
   function withCodeMirror() {
     this.codeMirrorToTextArea = function(textArea) {
-      CodeMirror.fromTextArea(textArea)
+      CodeMirror.fromTextArea(textArea, {readOnly: true});
       this.trigger('uiDidCodeMirror');
     };
   }
