@@ -21,7 +21,7 @@
         }
       });
 
-      HelloWorld.attachTo('.selector');
+      HelloWorld.attachTo('.hello-world');
     </textarea>
   </div>
   <div class="Example-app col-md-4">
