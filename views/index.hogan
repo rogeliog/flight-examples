@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+  {{>head}}
+  <body>
+    <div class="Examples">
+      {{>examples}}
+    </div>
+    {{>javascripts}}
+  </body>
+</html>
