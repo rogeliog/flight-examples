@@ -1,5 +1,7 @@
 # Flight Examples
 
+Live [Flight](https://github.com/flightjs/flight) code examples.
+
 ## Development
 
 ```bash
@@ -7,7 +9,7 @@ npm install & bower install
 npm start
 ```
 
-# Adding new code examples.
+## Adding new code examples.
 
 For each new code example use the following file structure:
 
