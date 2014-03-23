@@ -1,0 +1,31 @@
+<div class="Example row" data-example-name="color_matcher">
+  <div class="Example-header col-md-12">
+    <div class="Example-title">Color Matcher</div>
+    <div class="Example-description">Type a color or a hex value and the box will match that color</div>
+  </div>
+  <div class="Example-code-wrapper col-md-8">
+    <textarea class="Example-code">
+      var ColorMatcher = flight.component(function() {
+        this.defaultAttrs({
+          inputSelector: '.inputField',
+          colorSelector: '.color'
+        });
+
+        this.updateName = function (e, data) {
+          this.select('colorSelector').css({background: data.el.value});
+        };
+
+        this.after('initialize', function () {
+          this.on("keyup", { inputSelector: this.updateName });
+        });
+      });
+
+      ColorMatcher.attachTo('.color-matcher');
+    </textarea>
+  </div>
+  <div class="Example-result col-md-4">
+    <div class="color"></div>
+    <input type="text" class="inputField" placeholder="Enter a color or #hex">
+  </div>
+</div>
+

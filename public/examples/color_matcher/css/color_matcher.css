@@ -1,0 +1,12 @@
+/* Color Example */
+.color {
+  height: 133px;
+  border-radius: 5px;
+  background: #ccc;
+  margin-bottom: 10px;
+  transition: background 0.5s;
+}
+
+.inputField, .color {
+  width: 200px;
+}

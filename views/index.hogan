@@ -2,8 +2,10 @@
 <html>
   {{>head}}
   <body>
-    <div class="Examples">
-      {{>examples}}
+    <div calss='row'>
+      <div class="Examples col-md-10 col-md-offset-1">
+        {{>examples}}
+      </div>
     </div>
     {{>javascripts}}
   </body>

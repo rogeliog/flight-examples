@@ -1,5 +1,9 @@
-<div class="Example" data-example-name="hello_world">
-  <div class="Example-code-wrapper">
+<div class="Example row" data-example-name="hello_world">
+  <div class="Example-header col-md-12">
+    <div class="Example-title">Hello world</div>
+    <div class="Example-description">Your first app.</div>
+  </div>
+  <div class="Example-code-wrapper col-md-8">
     <textarea class="Example-code">
       var HelloWorld = flight.component(function () {
           this.defaultAttrs({
@@ -20,7 +24,7 @@
       HelloWorld.attachTo('.selector');
     </textarea>
   </div>
-  <div class="Example-result">
+  <div class="Example-result col-md-4">
     <input type="text" class="inputField" placeholder="Enter name here">
     <h3>Hello <span class="name"> </span>!</h3>
   </div>

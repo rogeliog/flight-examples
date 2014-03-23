@@ -1,1 +1,2 @@
 {{>examples/hello_world}}
+{{>examples/color_matcher}}
