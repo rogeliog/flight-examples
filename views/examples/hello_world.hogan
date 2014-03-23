@@ -24,7 +24,7 @@
       HelloWorld.attachTo('.selector');
     </textarea>
   </div>
-  <div class="Example-result col-md-4">
+  <div class="Example-app col-md-4">
     <input type="text" class="inputField" placeholder="Enter name here">
     <h3>Hello <span class="name"> </span>!</h3>
   </div>
