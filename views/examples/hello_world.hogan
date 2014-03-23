@@ -1,14 +1,7 @@
 <div class="Example" data-example-name="hello_world">
   <div class="Example-code-wrapper">
     <textarea class="Example-code">
-      define(function (require) {
-        'use strict';
-
-        var defineComponent = require('flight/lib/component');
-
-        return defineComponent(helloWorld);
-
-        function helloWorld() {
+      var HelloWorld = flight.component(function () {
           this.defaultAttrs({
             inputSelector: '.inputField',
             nameSelector: '.name'
@@ -23,6 +16,8 @@
           });
         }
       });
+
+      HelloWorld.attachTo('.selector');
     </textarea>
   </div>
   <div class="Example-result">
