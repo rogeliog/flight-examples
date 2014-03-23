@@ -49,6 +49,7 @@
 .Example {
   border: 1px solid #ddd;
   border-top: 0;
+  min-height: 350px;
 }
 
 .Example-header {
