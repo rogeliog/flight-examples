@@ -1,5 +1,51 @@
 @import "/examples/color_matcher/css/color_matcher.css";
 
+/*
+ * Header
+ */
+
+.Header {
+  padding: 20px;
+}
+
+.Header-logo {
+  width: 110px;
+  margin-left: -20px;
+}
+
+.Header-title {
+  font-family: Helvetica;
+  font-size: 40px;
+  color: #666;
+  padding: 15px 0 0 0;
+  line-height: 1.5;
+  margin: 0;
+}
+
+
+/*
+ * Examples
+ */
+
+.Examples {
+  margin-bottom: 40px;
+}
+
+/*
+ * Example
+ */
+
+.Example:nth-child(1) {
+  border-top: 1px solid #ddd;
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
+}
+
+.Example:last-child {
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
 .Example {
   border: 1px solid #ddd;
   border-top: 0;

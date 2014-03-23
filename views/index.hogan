@@ -3,6 +3,10 @@
   {{>head}}
   <body>
     <div calss='row'>
+      <div class="Header col-md-10 col-md-offset-1">
+        <img class="Header-logo col-md-4" src="/images/flight-logo.png" />
+        <h2 class="Header-title col-md-8">Flight Examples</h2>
+      </div>
       <div class="Examples col-md-10 col-md-offset-1">
         {{>examples}}
       </div>
