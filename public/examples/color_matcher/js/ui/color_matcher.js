@@ -17,7 +17,7 @@ define(function (require) {
     };
 
     this.after('initialize', function () {
-      this.on("keyup", { inputSelector: this.updateName });
+      this.on("input", { inputSelector: this.updateName });
     });
   }
 
